@@ -1,0 +1,406 @@
+/*=========================== CONTAINERS ============================*/
+/*Root Container*/
+.root-container {
+    width: 100%;
+    height: 100%;
+}
+/*Header Containers*/
+
+.header-container {
+    width: 100%;
+    height: 20%;
+    flex-direction: row;
+    min-height: 150px;
+}
+
+.header-container-leftside {
+    align-self: center;
+    align-items: flex-start;
+    width: 20%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: center;
+    -unity-text-align: upper-left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 0;
+}
+
+.header-container-center {
+    align-self: center;
+    align-items: center;
+    -unity-text-align: middle-center;
+    flex-grow: 1;
+    width: 60%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    -unity-background-scale-mode: stretch-to-fill;
+    max-height: none;
+    min-height: 100%;
+}
+
+.header-container-rightside {
+    align-self: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    justify-content: flex-end;
+    align-content: center;
+    flex-direction: row;
+}
+/*Content Containers*/
+.content-container {
+    width: 100%;
+    height: 60%;
+    flex-direction: row;
+}
+
+.content-container-leftside {
+    align-items: flex-start;
+    align-self: flex-start;
+    width: 20%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.content-container-center {
+    align-items: center;
+    align-self: center;
+    width: 60%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    min-width: auto;
+}
+
+.content-container-rightside {
+    align-self: flex-end;
+    align-items: flex-end;
+    width: 20%;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+/*Footer Container*/
+.footer-container {
+    width: 100%;
+    height: 20%;
+    flex-direction: row;
+}
+/*Settings Container*/
+.settings-container {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 5%;
+    bottom: 5%;
+    background-color: rgba(0, 0, 0, 0.83);
+}
+
+/*=========================== BUTTONS ==================================*/
+
+
+.button {
+    margin-top: 7%;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    background-size: 100% 100%;
+    align-content: auto;
+    align-self: auto;
+    font-size: 40px;
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 450px;
+    height: 75px;
+    border-left-color: rgb(19, 18, 18);
+    border-right-color: rgb(19, 18, 18);
+    border-top-color: rgb(19, 18, 18);
+    border-bottom-color: rgb(19, 18, 18);
+    -unity-font-definition: url("project://database/Assets/MenuAssets/Fonts/Komika_display.ttf?fileID=12800000&guid=5c1567f93e7bee44b81ac25715ed3a2a&type=3#Komika_display");
+    align-items: auto;
+    -unity-font-style: bold;
+    min-width: 300px;
+    min-height: 50px;
+    max-width: 350px;
+    max-height: 75px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-image: url("project://database/Assets/MenuAssets/Images/Renkli%20Modern%20Yuvarlak%20Motosiklet%20Kul%C3%BCb%C3%BC%20Logo%20(2).png?fileID=21300000&guid=6609ebce069c2fa4d858ae8e92309d33&type=3#Renkli Modern Yuvarlak Motosiklet Kulübü Logo (2)");
+    color: rgb(255, 255, 255);
+}
+
+.button:hover {
+    background-color: rgb(255, 255, 255);
+    scale: 1.1 1.1;
+    rotate: 5deg;
+    color: rgb(245, 168, 10);
+    background-image: url("project://database/Assets/MenuAssets/Images/Renkli%20Modern%20Yuvarlak%20Motosiklet%20Kul%C3%BCb%C3%BC%20Logo%20(2).png?fileID=21300000&guid=6609ebce069c2fa4d858ae8e92309d33&type=3#Renkli Modern Yuvarlak Motosiklet Kulübü Logo (2)");
+    border-left-color: rgb(245, 168, 10);
+    border-right-color: rgb(245, 168, 10);
+    border-top-color: rgb(245, 168, 10);
+    border-bottom-color: rgb(245, 168, 10);
+}
+
+.button-side {
+    margin-top: 5%;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    background-size: 400% 100%;
+    align-content: auto;
+    align-self: auto;
+    font-size: 50px;
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    width: 100px;
+    height: 100px;
+    border-left-color: rgb(10, 7, 1);
+    border-right-color: rgb(10, 7, 1);
+    border-top-color: rgb(10, 7, 1);
+    border-bottom-color: rgb(10, 7, 1);
+    -unity-font-definition: url("project://database/Assets/MenuAssets/Fonts/Komika_Hand.ttf?fileID=12800000&guid=f03e7f0e641e83c4887c048cd4640b24&type=3#Komika_Hand");
+    align-items: auto;
+    -unity-font-style: bold;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.button-side:hover {
+    background-color: rgb(245, 168, 10);
+    scale: 1.1 1.1;
+}
+
+.button-header-languages {
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    background-size: 200px 200px;
+    align-content: auto;
+    align-self: auto;
+    font-size: 50px;
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    width: 50px;
+    height: 50px;
+    border-left-color: rgb(3, 31, 78);
+    border-right-color: rgb(3, 31, 78);
+    border-top-color: rgb(3, 31, 78);
+    border-bottom-color: rgb(3, 31, 78);
+    -unity-font-definition: url("project://database/Assets/MenuAssets/Fonts/Komika_Hand.ttf?fileID=12800000&guid=f03e7f0e641e83c4887c048cd4640b24&type=3#Komika_Hand");
+    align-items: auto;
+    -unity-font-style: bold;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 75px;
+    max-height: 75px;
+    background-image: none;
+    flex-grow: 0;
+    flex-shrink: 0;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    -unity-background-scale-mode: scale-and-crop;
+    translate: 0 0;
+}
+
+.button-header-languages:hover {
+    background-color: rgb(245, 168, 10);
+    scale: 1.3 1.3;
+}
+
+.button-settings {
+    flex-direction: column;
+    width: 250px;
+    height: 60px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 36px;
+    -unity-font-definition: url("project://database/Assets/MenuAssets/Fonts/KOMIKAX_.ttf?fileID=12800000&guid=e4fefaa2d8f260b49adb9e9d19abb4db&type=3#KOMIKAX_");
+}
+
+
+.button-settings-menu {
+    background-color: rgb(135, 135, 135);
+    width: 100%;
+    height: 75px;
+    align-self: center;
+    justify-content: center;
+    align-items: auto;
+    align-content: auto;
+    right: 0;
+    left: 0;
+    margin-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 30px;
+    font-size: 20px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    -unity-font-definition: url("project://database/Assets/MenuAssets/Fonts/Komika_Hand.ttf?fileID=12800000&guid=f03e7f0e641e83c4887c048cd4640b24&type=3#Komika_Hand");
+}
+
+.button-settings-menu:hover {
+    background-color: rgb(156, 151, 151);
+    scale: 1.1 1.1;
+    translate: 0 0;
+}
+
+.button-settings-menu:focus {
+    scale: 1.1 1.1;
+    background-color: orange;
+}
+
+.button-bottom {
+    width: 300px;
+    height: 75px;
+    -unity-text-align: middle-center;
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-right: 3%;
+    margin-left: 0;
+    background-size: 100% 100%;
+    font-size: 26px;
+}
+/*=========================== DROPDOWN BOXS===============================*/
+
+
+.dropdown-settings {
+    width: 80%;
+    -unity-font-style: normal;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0;
+}
+
+.dropdown-settings .unity-base-popup-field__label {
+    width: 300px;
+    height: 50px;
+    font-size: 28px;
+    color: white;
+    -unity-font-style: bold;
+    margin-right: 25px;
+}
+
+.dropdown-settings .unity-base-popup-field__input {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: white;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.dropdown-settings .unity-base-popup-field__text {
+    font-size: 24px;
+    color: orange;
+}
+
+
+
+/*=========================== SLIDERS ==================================*/
+
+
+.slider-settings {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 30px;
+    -unity-font-definition: url("project://database/Assets/MenuAssets/Fonts/delius-regular.ttf?fileID=12800000&guid=5c1f56e32f889a241be43a5982d0755d&type=3#delius-regular");
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+}
+
+.slider-settings .unity-base-slider__tracker {
+    margin-left: 10%;
+    margin-right: 5%;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.slider-settings .unity-base-slider__fill {
+    background-color: orange;
+}
+
+.slider-settings .unity-base-slider__dragger {
+    margin-left: 10%;
+    margin-right: 5%;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.slider-settings .unity-base-slider__input {
+    background-image: url("project://database/Assets/MenuAssets/Images/sliderBG.png?fileID=21300000&guid=3dae4be77263834478a36cf76badddf6&type=3#sliderBG");
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+
+/*=========================== LABELS ==================================*/
+
+.header-text {
+    font-size: 80px;
+    -unity-text-align: middle-center;
+    margin-top: 0;
+    margin-bottom: 0;
+    -unity-font-definition: url("project://database/Assets/MenuAssets/Fonts/KOMIKAX_.ttf?fileID=12800000&guid=e4fefaa2d8f260b49adb9e9d19abb4db&type=3#KOMIKAX_");
+    white-space: normal;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    -unity-font-style: normal;
+}
+
+
